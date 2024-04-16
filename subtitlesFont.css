@@ -30,11 +30,11 @@ video:cue {
 }
 
 
-::selection {
+*::selection {
   color: gold !important;
   background-color: red !important;
 }
 
-:focus {
+*:focus {
   outline: 2px solid red !important; /* Change 'red' to the color you prefer */
 }
