@@ -9,3 +9,5 @@ Download and build https://github.com/jellyfin/jellyfin-web except with the foll
 
 - home.html -> src/controllers/home.html
 - home.js -> src/controllers/home.js
+
+remove all contents from C:\Program Files\Jellyfin\Server\jellyfin-web and move over everything from jellyfin-web newly created dist folder
