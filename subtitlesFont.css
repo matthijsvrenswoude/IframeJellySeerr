@@ -37,4 +37,5 @@ video:cue {
 
 *:focus {
   outline: 2px solid red !important; /* Change 'red' to the color you prefer */
+  background: green !important;
 }
