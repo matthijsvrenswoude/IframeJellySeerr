@@ -1,0 +1,25 @@
+#requestMediaTab{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 3.5em !important;
+}
+
+.indexPage{
+    position: relative;
+}
+
+.mainDrawer-scrollContainer{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.mainDrawer-scrollContainer a.navMenuOption{
+    border-radius: 6px !important;
+    overflow: hidden;
+}
