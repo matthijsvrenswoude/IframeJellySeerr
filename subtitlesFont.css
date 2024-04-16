@@ -28,3 +28,9 @@ video:cue {
   font-weight: 700 !important;
   text-shadow: 0em 0em 0.2em rgba(0, 0, 0, 1) !important;
 }
+
+
+::selection {
+  color: gold !important;
+  background-color: red !important;
+}
