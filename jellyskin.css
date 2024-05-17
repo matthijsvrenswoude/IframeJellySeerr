@@ -1,0 +1,1338 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons@latest/Font%20Awesome/light.min.css");
+
+#reactRoot{
+    height: 100%;
+}
+
+.mainAnimatedPage {
+    position: unset;
+}
+
+:root {
+    --accent1-light: #a95bc2;
+    --accent1-dark: #3f2348;
+    --accent1-light-opacity1: rgba(169, 91, 194, .4);
+    --accent2-light: #00a4db;
+    --accent2-dark: #003d52
+}
+
+.backgroundContainer {
+    background-color: #010e18
+}
+
+.backgroundContainer.withBackdrop {
+    background: transparent !important
+}
+
+.backdropContainer {
+    filter: blur(10px) brightness(70%) saturate(110%) contrast(130%);
+    mask-image: linear-gradient(180deg, #000, transparent);
+    -webkit-mask-image: linear-gradient(180deg, #000, transparent)
+}
+
+.withTabs .content-primary {
+    padding-top: 1em !important
+}
+
+.scrollY {
+    mask-image: linear-gradient(180deg, transparent, #000 1em calc(100% - 1em), transparent);
+    -webkit-mask-image: linear-gradient(180deg, transparent, #000 1em calc(100% - 1em), transparent);
+    padding: 1em 0
+}
+
+.pageTabContent {
+    padding: 0 1em
+}
+
+.appfooter {
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background: rgba(0, 0, 0, .65)
+}
+
+::-moz-selection {
+    background: var(--accent2-light)
+}
+
+::selection {
+    background: var(--accent2-light)
+}
+
+.skinHeader {
+    background: transparent !important;
+    position: static
+}
+
+.layout-desktop body, .layout-mobile body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden !important
+}
+
+div[data-role=page].page {
+    height: calc(100% + 1.2em);
+    mask-image: linear-gradient(0deg, transparent, #000 1em calc(100% - 1em), transparent);
+    -webkit-mask-image: linear-gradient(0deg, transparent, #000 1em calc(100% - 1em), transparent);
+    overflow: hidden visible;
+    padding: 1.2em 0 !important;
+    position: absolute
+}
+
+.mainAnimatedPages.skinBody {
+    height: 100%;
+    position: relative
+}
+
+.selectionCommandsPanel {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, .75);
+    box-shadow: 0 0 15px #000
+}
+
+.emby-button {
+    position: relative
+}
+
+.emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button), .emby-button[is=emby-button]:not(.emby-tab-button) {
+    background: #063660;
+    border-radius: 100vh;
+    overflow: hidden
+}
+
+.emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button):after, .emby-button[is=emby-button]:not(.emby-tab-button):after {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .15s linear;
+    width: 100%;
+    z-index: -1
+}
+
+.emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button):focus:after, .emby-button.raised[is=emby-linkbutton]:not(.emby-tab-button):hover:after, .emby-button[is=emby-button]:not(.emby-tab-button):focus:after, .emby-button[is=emby-button]:not(.emby-tab-button):hover:after {
+    opacity: 1
+}
+
+.emby-button.emby-collapsible-button {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none
+}
+
+.emby-button.emby-collapsible-button:after {
+    display: none !important
+}
+
+.paper-icon-button-light {
+    border-radius: 10px
+}
+
+.skipIntro {
+    background: #063660 !important;
+    border: none;
+    border-radius: 100vh;
+    bottom: 12em;
+    box-shadow: 0 0 15px #000;
+    color: #fff !important;
+    font-size: 1.2em;
+    overflow: hidden;
+    padding: .5em;
+    right: 8em
+}
+
+.skipIntro:hover {
+    box-shadow: 0 0 15px #000 !important
+}
+
+.skipIntro:after {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .15s linear;
+    width: 100%;
+    z-index: 0
+}
+
+.skipIntro .paper-icon-button-light {
+    color: #fff !important;
+    z-index: 1
+}
+
+.skipIntro:focus:after, .skipIntro:hover:after {
+    opacity: 1
+}
+
+.dialog .emby-button:not(.cardImageContainer,.actionSheetMenuItem).button-delete {
+    background: #f70000 !important
+}
+
+.emby-scroller {
+    mask-image: linear-gradient(270deg, transparent, #000 .5em calc(100% - .5em), transparent);
+    -webkit-mask-image: linear-gradient(270deg, transparent, #000 .5em calc(100% - .5em), transparent)
+}
+
+.card {
+    contain: none !important
+}
+
+.card.overflowSquareCard .cardScalable {
+    aspect-ratio: 1
+}
+
+.card.overflowSquareCard .cardImageContainer:after {
+    background-size: contain !important
+}
+
+.cardOverlayContainer {
+    background: rgba(0, 0, 0, .7)
+}
+
+.cardImageIcon {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+.cardScalable {
+    aspect-ratio: auto;
+    border-radius: 10px 10px 0 0;
+    box-shadow: none !important;
+    overflow: hidden;
+    position: relative;
+    width: calc(100% + 1px)
+}
+
+.cardScalable > * {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    width: 100%
+}
+
+.cardScalable:not(.imageEditorCard) .cardImageContainer:after, .cardScalable:not(.imageEditorCard) .cardImageContainer:before {
+    background: inherit;
+    content: "";
+    position: absolute
+}
+
+.cardScalable:not(.imageEditorCard) .cardImageContainer:after {
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    transform: scale(1);
+    transition: transform .15s ease-in-out;
+    width: 100%;
+    z-index: -1
+}
+
+.cardScalable:not(.imageEditorCard) .cardImageContainer:before {
+    filter: blur(5px) brightness(50%);
+    height: calc(100% + 20px);
+    left: -10px;
+    top: -10px;
+    width: calc(100% + 20px);
+    z-index: -1
+}
+
+.card:focus-visible .cardImageContainer:after, .card:hover .cardImageContainer:after {
+    transform: scale(1.2)
+}
+
+.card[data-type=Person] {
+    aspect-ratio: 1/1;
+    height: auto
+}
+
+.card[data-type=Person] .cardPadder-overflowPortrait {
+    padding-bottom: 100% !important
+}
+
+.card[data-type=Person] .cardPadder-overflowPortrait .cardImageIcon {
+    color: transparent !important
+}
+
+.card[data-type=Person] .cardBox {
+    aspect-ratio: 1/1;
+    margin: .5em !important;
+    position: relative
+}
+
+.card[data-type=Person] .cardOverlayContainer {
+    background: transparent !important;
+    height: calc(100% - 2.825em);
+    z-index: 3
+}
+
+.card[data-type=Person] .cardOverlayButton-br {
+    bottom: .5em;
+    right: .5em
+}
+
+.card[data-type=Person] .cardContent {
+    filter: brightness(1);
+    transition: filter .25s ease-in-out
+}
+
+.card[data-type=Person] .cardScalable {
+    aspect-ratio: 1/1;
+    height: auto
+}
+
+.card[data-type=Person] .cardScalable:after {
+    background: linear-gradient(0deg, rgba(0, 0, 0, .6), transparent);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.card[data-type=Person] .cardScalable .cardImageContainer:after {
+    background-size: cover
+}
+
+.card[data-type=Person] .cardText-first {
+    bottom: 0;
+    color: #fff;
+    padding: .5em !important;
+    position: absolute;
+    width: calc(100% - 1em)
+}
+
+.card[data-type=Person]:hover .cardContent {
+    filter: brightness(.3)
+}
+
+.card[data-type=Actor] {
+    aspect-ratio: 1/1;
+    height: auto
+}
+
+.card[data-type=Actor] .cardPadder-overflowPortrait {
+    padding-bottom: 100% !important
+}
+
+.card[data-type=Actor] .cardPadder-overflowPortrait .cardImageIcon {
+    color: transparent !important
+}
+
+.card[data-type=Actor] .cardBox {
+    aspect-ratio: 1/1;
+    margin: .5em !important;
+    position: relative
+}
+
+.card[data-type=Actor] .cardOverlayContainer {
+    background: transparent !important;
+    height: calc(100% - 2.825em);
+    z-index: 3
+}
+
+.card[data-type=Actor] .cardOverlayButton-br {
+    bottom: .5em;
+    right: .5em
+}
+
+.card[data-type=Actor] .cardContent {
+    filter: brightness(1);
+    transition: filter .25s ease-in-out
+}
+
+.card[data-type=Actor] .cardScalable {
+    aspect-ratio: 1/1;
+    height: auto
+}
+
+.card[data-type=Actor] .cardScalable:after {
+    background: linear-gradient(0deg, rgba(0, 0, 0, .6), transparent);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.card[data-type=Actor] .cardScalable .cardImageContainer:after {
+    background-size: cover
+}
+
+.card[data-type=Actor] .cardText-first {
+    bottom: 1.565em;
+    color: #fff;
+    padding: .1em .5em !important;
+    position: absolute;
+    width: calc(100% - 1em)
+}
+
+.card[data-type=Actor] .cardText-secondary {
+    bottom: .2em;
+    font-size: .86em;
+    padding: .1em .5em !important;
+    position: absolute;
+    width: calc(100% - 1em)
+}
+
+.card[data-type=Actor]:hover .cardContent {
+    filter: brightness(.3)
+}
+
+.card .cardBox {
+    background: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .75);
+    margin: .5em !important;
+    overflow: hidden;
+    transition: background .15s
+}
+
+.card:not([data-type=Person]) .cardText-secondary {
+    padding-bottom: .5em
+}
+
+.card:focus-visible .cardBox, .card:hover .cardBox {
+    background: rgba(0, 0, 0, .5)
+}
+
+.card.squareCard .cardScalable {
+    padding-top: 100%;
+    width: 100%
+}
+
+.card[data-userid] .cardScalable {
+    padding-top: 0 !important
+}
+
+.card[data-userid] .cardScalable .cardContent {
+    padding-top: 100% !important
+}
+
+.cardPadder {
+    background: linear-gradient(130deg, var(--accent1-dark), var(--accent2-dark)) !important
+}
+
+.cardPadder-square {
+    aspect-ratio: 0 !important;
+    padding: 0
+}
+
+.cardPadder-square + div {
+    aspect-ratio: 1
+}
+
+.cardImageContainer.defaultCardBackground {
+    background: transparent
+}
+
+.innerCardFooter {
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+.innerCardFooter .itemProgressBar {
+    background: hsla(0, 0%, 100%, .3);
+    height: .4em
+}
+
+.innerCardFooter .itemProgressBar .itemProgressBarForeground {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light))
+}
+
+.cardOverlayContainer {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center
+}
+
+.cardOverlayButton {
+    border-radius: 5px
+}
+
+.cardOverlayButton span {
+    background: linear-gradient(0deg, var(--accent1-light) 10%, var(--accent2-light) 90%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    transition: .15s
+}
+
+.cardOverlayButton[data-action=resume] {
+    background: transparent !important;
+    border-radius: 5px;
+    padding: 1.5em
+}
+
+.cardOverlayButton:focus-visible span, .cardOverlayButton:hover span {
+    color: transparent !important
+}
+
+.cardIndicators, .listItemIndicators {
+    right: 0;
+    top: 0
+}
+
+.cardIndicators .indicator, .listItemIndicators .indicator {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+    padding: .2em
+}
+
+[data-collectiontype=livetv] .cardText, [data-isfolder=true][data-type=CollectionFolder]:not([data-type=Series]) .cardText {
+    padding: .75em !important
+}
+
+.cardText:nth-child(4) {
+    display: none
+}
+
+.defaultCardBackground {
+    background: linear-gradient(130deg, var(--accent1-dark), var(--accent2-dark)) !important
+}
+
+.chapterCard .innerCardFooter {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, .6);
+    border-radius: 0 1em 1em 0 !important
+}
+
+.layout-mobile .cardOverlayButton {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px !important;
+    bottom: 10px;
+    right: 10px;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.devicesList .cardScalable {
+    aspect-ratio: 16/9
+}
+
+.devicesList .cardPadder {
+    display: none
+}
+
+.itemSelectionPanel {
+    background: linear-gradient(180deg, rgba(0, 0, 0, .75), transparent 21%);
+    border: 1px solid var(--accent1-light);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: .5em
+}
+
+.dialogContainer .card .cardImageContainer:after, .dialogContainer .card .cardImageContainer:before {
+    display: none !important
+}
+
+:not(.dashboardDocument) .mainDrawer {
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+    background: rgba(0, 0, 0, .5)
+}
+
+:not(.dashboardDocument) .mainDrawer.drawer-open {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px)
+}
+
+:not(.dashboardDocument) .mainDrawer.drawer-open .scrollContainer {
+    mask-image: linear-gradient(0deg, transparent, #000 .5em calc(100% - .5em), transparent);
+    -webkit-mask-image: linear-gradient(0deg, transparent, #000 .5em calc(100% - .5em), transparent)
+}
+
+:not(.dashboardDocument) .mainDrawer .navMenuOption:after {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .15s linear;
+    width: 100%;
+    z-index: -1
+}
+
+:not(.dashboardDocument) .mainDrawer .navMenuOption .navMenuOptionIcon {
+    transition: margin-right .15s linear
+}
+
+:not(.dashboardDocument) .mainDrawer .navMenuOption-selected {
+    background: linear-gradient(130deg, var(--accent2-light), var(--accent1-light)) !important
+}
+
+:not(.dashboardDocument) .mainDrawer .navMenuOption:hover .navMenuOptionIcon {
+    margin-right: 1.46em
+}
+
+:not(.dashboardDocument) .mainDrawer .navMenuOption:hover:after {
+    opacity: 1
+}
+
+.mainDrawer.drawer-open .scrollContainer::-webkit-scrollbar-track {
+    box-shadow: none !important
+}
+
+.mainDrawer.drawer-open .scrollContainer::-webkit-scrollbar-track-piece {
+    background: transparent !important
+}
+
+.inputContainer {
+    position: relative
+}
+
+.inputContainer .inputLabel {
+    font-size: .95em;
+    position: absolute;
+    top: -1.2em;
+    transition: top .25s, font-size .25s
+}
+
+.inputContainer .inputLabel-float:not(.inputContainer .inputLabelFocused) {
+    font-size: 1.2em;
+    top: 0
+}
+
+.inputContainer .emby-input {
+    background: transparent;
+    border: none;
+    border-bottom: .1em solid hsla(0, 0%, 100%, .7);
+    border-radius: 0 !important
+}
+
+.inputContainer .emby-input:focus {
+    border-color: var(--accent2-light) !important
+}
+
+.emby-select {
+    background: transparent;
+    border: none !important;
+    border-bottom: .1em solid hsla(0, 0%, 100%, .7) !important;
+    border-radius: 0 !important
+}
+
+.emby-select:focus {
+    border-color: var(--accent2-light) !important
+}
+
+.emby-select:focus ~ .selectArrowContainer {
+    transform: rotate(180deg)
+}
+
+.selectArrowContainer {
+    transition: transform .15s
+}
+
+.checkboxOutline {
+    background-color: #063660 !important;
+    border-color: #063660 !important;
+    border-radius: 5px !important
+}
+
+span.checkboxLabel {
+    position: relative
+}
+
+span.checkboxLabel:after {
+    background-color: #fff;
+    bottom: -.2em;
+    content: "";
+    height: .1em;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease-in-out;
+    width: 100%
+}
+
+.emby-checkbox:focus-visible + span.checkboxLabel:after {
+    transform: scaleX(1)
+}
+
+.checkboxIcon-checked, .emby-checkbox-label .checkboxIcon-checked {
+    align-items: center;
+    display: block !important;
+    justify-content: center;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform .15s, opacity .15s
+}
+
+.emby-checkbox:checked + span + .checkboxOutline > .checkboxIcon-checked {
+    display: flex !important;
+    opacity: 1;
+    transform: rotate(0deg) scale(1)
+}
+
+.emby-textarea {
+    background: transparent;
+    border: none;
+    border-bottom: .1em solid hsla(0, 0%, 100%, .7);
+    border-radius: 0 !important;
+    width: 100%
+}
+
+.emby-textarea:focus {
+    border-color: var(--accent2-light) !important
+}
+
+.checkboxList.paperList {
+    background: rgba(0, 0, 0, .5) !important;
+    border-radius: 10px !important;
+    overflow: auto !important
+}
+
+.paperList {
+    background: transparent !important;
+    border-radius: 20px;
+    overflow: hidden
+}
+
+.paperList .listItem {
+    background: rgba(0, 0, 0, .5);
+    border: none !important;
+    border-radius: 8px;
+    margin-bottom: .3em;
+    transition: background .25s
+}
+
+.paperList .listItem:last-child {
+    border: none;
+    margin-bottom: 0 !important
+}
+
+.paperList .listItem:focus-visible, .paperList .listItem:hover {
+    background: rgba(0, 0, 0, .7)
+}
+
+.paperList .listItemIcon {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+.inputLabelFocused, .selectLabelFocused, .textareaLabelFocused {
+    color: var(--accent2-light)
+}
+
+#myPreferencesMenuPage .listItem {
+    border-radius: 10px;
+    transition: background .25s
+}
+
+#myPreferencesMenuPage .listItem:hover {
+    background: #000
+}
+
+#myPreferencesMenuPage .listItem:hover .listItemIcon {
+    margin-right: .5em
+}
+
+#myPreferencesMenuPage .listItem-border {
+    border: none !important
+}
+
+#myPreferencesMenuPage .listItemIcon {
+    background: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: margin-right .25s
+}
+
+.dialog {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, .7);
+    border-radius: 20px !important;
+    box-shadow: none;
+    overflow: hidden
+}
+
+.dialog .smoothScrollY {
+    max-height: 100%
+}
+
+.dialog .emby-button:not(.cardImageContainer,.actionSheetMenuItem) {
+    background: transparent !important
+}
+
+.dialog .emby-button:not(.cardImageContainer,.actionSheetMenuItem):after {
+    all: unset !important
+}
+
+.dialog .emby-button.actionSheetMenuItem {
+    background: transparent !important;
+    border-radius: 0 !important
+}
+
+.dialog .cardText {
+    display: block !important
+}
+
+.filterDialogContent {
+    height: 100%;
+    overflow: auto
+}
+
+a[is=emby-linkbutton]:not(.listItem-border,.navMenuOption) {
+    margin-bottom: .3em;
+    position: relative;
+    text-decoration: none !important
+}
+
+a[is=emby-linkbutton]:not(.listItem-border,.navMenuOption).button-link {
+    color: var(--accent2-light)
+}
+
+a[is=emby-linkbutton]:not(.listItem-border,.navMenuOption):after {
+    background: currentColor;
+    bottom: -.1em;
+    content: "" !important;
+    height: .1em;
+    left: 0 !important;
+    position: absolute;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform .15s ease-in-out;
+    width: 100%
+}
+
+a[is=emby-linkbutton]:not(.listItem-border,.navMenuOption):hover:after {
+    transform: scale(1);
+    transform-origin: left
+}
+
+.sliderBubble {
+    background: transparent;
+    border-radius: 20px;
+    overflow: hidden
+}
+
+.chapterThumbTextContainer {
+    background: linear-gradient(0deg, #000 .25em, rgba(0, 0, 0, .25), transparent) !important;
+    padding: .5em .25em !important
+}
+
+#indexPage .sectionTitle {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 1.6em
+}
+
+#indexPage .sectionTitle:before {
+    background: #fff;
+    content: "";
+    height: 2px;
+    margin-right: .5em;
+    width: 1.3em
+}
+
+#indexPage .emby-scroller .emby-button:not(.cardOverlayButton) {
+    background: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .75);
+    margin-right: 1.2em;
+    overflow: hidden
+}
+
+#indexPage .emby-scroller .emby-button:not(.cardOverlayButton):after {
+    all: unset
+}
+
+#indexPage .emby-scroller .emby-button:not(.cardOverlayButton):hover {
+    background: rgba(0, 0, 0, .5)
+}
+
+#indexPage .section0 .emby-scrollbuttons {
+    display: none
+}
+
+#indexPage .section0 .itemsContainer {
+    flex-wrap: wrap
+}
+
+#itemDetailPage {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-y: auto;
+    width: 100vw
+}
+
+#itemDetailPage .mediaInfoItem {
+    border-radius: 10vh;
+    white-space: nowrap
+}
+
+#itemDetailPage .detailRibbon {
+    background: transparent;
+    font-size: 2.2vh;
+    height: 7.2em;
+    margin-top: 10vh;
+    position: static !important
+}
+
+#itemDetailPage .detailRibbon .itemMiscInfo {
+    margin-bottom: 0 !important
+}
+
+#itemDetailPage .detailImageContainer .card {
+    border-radius: 10px;
+    left: 3.3%;
+    position: fixed !important;
+    top: calc(50% + 1em);
+    transform: translateY(-50%);
+    width: 25vw
+}
+
+#itemDetailPage .detailPageWrapperContainer {
+    width: 100vw
+}
+
+#itemDetailPage .mainDetailButtons .emby-button:not([data-action=resume],[data-action=play]) {
+    background: transparent !important
+}
+
+#itemDetailPage .detailLogo {
+    display: none
+}
+
+#itemDetailPage .emby-button {
+    align-items: center;
+    background: transparent !important;
+    border-radius: 10vh;
+    flex-flow: row;
+    justify-content: center;
+    margin-right: .5em !important;
+    text-decoration: none
+}
+
+#itemDetailPage .emby-button[is=emby-linkbutton] {
+    color: unset
+}
+
+#itemDetailPage .emby-button:not([is=emby-linkbutton]):hover {
+    background: hsla(0, 0%, 100%, .1) !important;
+    color: #fff
+}
+
+#itemDetailPage .emby-button:not([is=emby-linkbutton]):after {
+    display: none
+}
+
+#itemDetailPage .emby-button[title=Play], #itemDetailPage .emby-button[title=Resume] {
+    background: hsla(0, 0%, 100%, .2) !important;
+    color: #fff;
+    gap: .2em;
+    margin-right: .5em;
+    padding: .4em 1em !important
+}
+
+#itemDetailPage .emby-button[title=Play]:after, #itemDetailPage .emby-button[title=Resume]:after {
+    background: transparent;
+    content: attr(title);
+    display: block;
+    font-size: 1.5em;
+    font-weight: 400;
+    height: -moz-fit-content;
+    height: fit-content;
+    opacity: 1;
+    position: static
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list {
+    display: grid;
+    gap: 1em;
+    grid-template-columns:1fr 1fr 1fr
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem .paper-icon-button-light[data-action=menu]:after {
+    content: "";
+    margin-left: 100%
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem .paper-icon-button-light:not([data-action=menu]) {
+    aspect-ratio: 1;
+    border-radius: 10px
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem[data-type=Episode] {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 0;
+    transition: background .25s
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem[data-type=Episode]:hover {
+    background: rgba(0, 0, 0, .7)
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem-content {
+    flex-direction: column
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItemImage-large {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem-overview {
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%
+}
+
+#itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItemBody {
+    width: 95%
+}
+
+#itemDetailPage .listItem {
+    flex-flow: column !important
+}
+
+#itemDetailPage .listItem[data-mediatype=Audio] {
+    flex-flow: row !important;
+    grid-column: auto/span 3
+}
+
+.layout-mobile #itemDetailPage .itemBackdrop {
+    background-image: linear-gradient(130deg, var(--accent1-light), var(--accent2-light));
+    filter: blur(10px) brightness(50%);
+    height: 80vh !important;
+    left: -10px;
+    margin-top: 0 !important;
+    mask-image: linear-gradient(180deg, #000, transparent);
+    -webkit-mask-image: linear-gradient(180deg, #000, transparent);
+    position: absolute !important;
+    top: 0;
+    width: calc(100vw + 20px)
+}
+
+.layout-mobile #itemDetailPage .detailRibbon {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: flex-end;
+    margin-top: 0 !important
+}
+
+.layout-mobile #itemDetailPage .detailImageContainer {
+    overflow: hidden;
+    padding: 0 !important;
+    position: static
+}
+
+.layout-mobile #itemDetailPage .detailImageContainer .card {
+    filter: none !important;
+    margin: 0 !important;
+    max-width: 50vw !important;
+    min-width: 50vw;
+    position: static !important;
+    top: 0;
+    transform: none
+}
+
+.layout-mobile #itemDetailPage .detailImageContainer .cardBox {
+    box-shadow: none;
+    margin: 0 !important
+}
+
+.layout-mobile #itemDetailPage .itemMiscInfo {
+    justify-content: flex-start
+}
+
+.layout-mobile #itemDetailPage .infoText {
+    text-align: start;
+    width: -moz-fit-content !important;
+    width: fit-content !important
+}
+
+.layout-mobile #itemDetailPage .infoWrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding: 0 !important
+}
+
+.layout-mobile #itemDetailPage .mainDetailButtons {
+    flex-wrap: nowrap;
+    gap: 1em !important;
+    justify-content: flex-start;
+    overflow: auto;
+    width: 100%
+}
+
+.layout-mobile #itemDetailPage .mainDetailButtons .emby-button[title=Play], .layout-mobile #itemDetailPage .mainDetailButtons .emby-button[title=Resume] {
+    background: transparent !important;
+    border: none !important;
+    overflow: visible;
+    padding: .7em
+}
+
+.layout-mobile #itemDetailPage .mainDetailButtons .emby-button[title=Play]:after, .layout-mobile #itemDetailPage .mainDetailButtons .emby-button[title=Resume]:after {
+    all: unset !important
+}
+
+.layout-mobile #itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list {
+    grid-template-columns:1fr
+}
+
+.layout-mobile #itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItemImage {
+    flex-basis: 20vh;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%
+}
+
+.layout-mobile #itemDetailPage .childrenItemsContainer.itemsContainer.vertical-list .listItem-bottomoverview {
+    font-size: 88%;
+    margin-bottom: 1em;
+    margin-top: .2em;
+    padding: 0 1em 1em
+}
+
+.layout-mobile #itemDetailPage .emby-button {
+    margin: 0 !important
+}
+
+@media (orientation: landscape) {
+    .layout-mobile #itemDetailPage .detailRibbon {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10vh !important
+    }
+
+    .layout-mobile #itemDetailPage .detailRibbon .infoWrapper {
+        align-items: center;
+        display: grid;
+        flex-basis: 50vw;
+        flex-direction: row;
+        grid-template-areas:"card name" "card info"
+    }
+
+    .layout-mobile #itemDetailPage .detailRibbon .infoWrapper .detailImageContainer {
+        grid-area: card
+    }
+
+    .layout-mobile #itemDetailPage .detailRibbon .infoWrapper .nameContainer {
+        align-self: self-end;
+        grid-area: name;
+        justify-self: flex-end;
+        text-overflow: ellipsis;
+        width: calc(100% - 1.2em)
+    }
+
+    .layout-mobile #itemDetailPage .detailRibbon .infoWrapper .itemMiscInfo-primary {
+        align-self: self-start;
+        grid-area: info;
+        justify-self: flex-end;
+        text-overflow: ellipsis;
+        width: calc(100% - 1.2em)
+    }
+
+    .layout-mobile #itemDetailPage .detailRibbon .infoText {
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        font-size: 3.2em;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        overflow: hidden;
+        text-align: start;
+        width: -moz-fit-content !important;
+        width: fit-content !important
+    }
+
+    .layout-mobile #itemDetailPage .detailImageContainer .card {
+        max-width: 40vw !important;
+        min-width: 20vw;
+        width: 100%
+    }
+
+    .layout-mobile #itemDetailPage .mainDetailButtons {
+        flex-basis: 50vw;
+        font-size: 1.5em;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: -moz-fit-content;
+        width: fit-content
+    }
+
+    .layout-mobile #itemDetailPage .parentName a {
+        text-align: start
+    }
+}
+
+@media (min-width: 40em) {
+    .dashboardDocument .skinBody {
+        width: calc(100% - 20em)
+    }
+}
+
+.dashboardDocument .headerTabs {
+    margin-left: 0;
+    width: auto
+}
+
+.dashboardColumn:first-child .dashboardSection .paperList {
+    background: rgba(0, 0, 0, .5) !important;
+    color: hsla(0, 0%, 100%, .7);
+    font-size: 1.1em
+}
+
+.layout-mobile .dashboardDocument .headerTabs {
+    width: 100%
+}
+
+#loginPage {
+    mask-image: none;
+    -webkit-mask-image: none
+}
+
+#loginPage:after {
+    background: url(https://cdn.jsdelivr.net/gh/prayag17/JellySkin/src/assets/background.png);
+    background-size: cover;
+    content: "";
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1
+}
+
+#loginPage > div {
+    left: 50%;
+    max-width: 50vw;
+    min-width: 40vw;
+    padding: 0 !important;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2
+}
+
+#loginPage #divUsers {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: auto
+}
+
+#loginPage #divUsers .card {
+    width: 30%
+}
+
+#loginPage #divUsers .card .cardBox {
+    box-shadow: none !important
+}
+
+#loginPage .emby-button {
+    background: transparent;
+    border: .2em solid
+}
+
+#loginPage .emby-button:after {
+    all: unset !important
+}
+
+#loginPage .emby-button:focus-visible, #loginPage .emby-button:hover {
+    background: hsla(0, 0%, 100%, .2)
+}
+
+#loginPage .checkboxOutline {
+    background: transparent !important;
+    border: .152em solid #fff !important
+}
+
+#loginPage .emby-input:focus, #loginPage .inputLabelFocused {
+    border-bottom-color: #fff !important;
+    color: #fff !important
+}
+
+.layout-mobile #loginPage > div {
+    max-width: 85vw;
+    width: 85vw
+}
+
+@media (orientation: portrait) and (max-width: 43em) {
+    .nowPlayingInfoContainer {
+        align-items: center;
+        justify-content: center
+    }
+
+    .nowPlayingPageImageContainer {
+        flex-grow: 0
+    }
+}
+
+.nowPlayingSongName {
+    font-size: 1.5em;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.subtitleSync {
+    left: 0;
+    top: 8em
+}
+
+.subtitleSyncContainer {
+    background-color: rgba(0, 0, 0, .75)
+}
+
+.sliderBubble, .subtitleSyncContainer {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px)
+}
+
+.sliderBubble {
+    background: rgba(0, 0, 0, .75)
+}
+
+body, h1, h2, h4, h5, html {
+    font-family: Montserrat, sans-serif
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9hYnN0cmFjdC9fZm9udHMuc2NzcyIsIi4uL3NyYy9hYnN0cmFjdC9fdmFyaWFibGVzLnNjc3MiLCJtYWluLmNzcyIsIi4uL3NyYy9iYXNlL19yZXNldC5zY3NzIiwiLi4vc3JjL2NvbXBvbmVudHMvX2hlYWRlci5zY3NzIiwiLi4vc3JjL2NvbXBvbmVudHMvX2J1dHRvbi5zY3NzIiwiLi4vc3JjL2NvbXBvbmVudHMvX2NhcmRzLnNjc3MiLCIuLi9zcmMvYWJzdHJhY3QvX21peGlucy5zY3NzIiwiLi4vc3JjL2NvbXBvbmVudHMvX3NpZGVtZW51LnNjc3MiLCIuLi9zcmMvY29tcG9uZW50cy9fc2Nyb2xsYmFycy5zY3NzIiwiLi4vc3JjL2NvbXBvbmVudHMvX2lucHV0LnNjc3MiLCIuLi9zcmMvY29tcG9uZW50cy9fbWVudS5zY3NzIiwiLi4vc3JjL2NvbXBvbmVudHMvX2xpbmtzLnNjc3MiLCIuLi9zcmMvY29tcG9uZW50cy9fc2xpZGVyQnViYmxlLnNjc3MiLCIuLi9zcmMvcGFnZXMvX2luZGV4UGFnZS5zY3NzIiwiLi4vc3JjL3BhZ2VzL190aXRsZVBhZ2Uuc2NzcyIsIi4uL3NyYy9wYWdlcy9fZGFzaGJvYXJkLnNjc3MiLCIuLi9zcmMvcGFnZXMvX2xvZ2luUGFnZS5zY3NzIiwiLi4vc3JjL3BhZ2VzL19wbGF5ZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFUSxxTUFBQSxDQUNBLHNHQUFBLENDRFIsTUFDQyx1QkFBQSxDQUNBLHNCQUFBLENBQ0EsNENBQUEsQ0FDQSx1QkFBQSxDQUNBLHNCQ0lELENDUkEscUJBQ0Msd0JEV0QsQ0NWQyxrQ0FDQyxnQ0RZRixDQ1RBLG1CQUNDLCtEQUFBLENBSUEsbURBQUEsQ0FDQSwyRERTRCxDQ1BBLDJCQUNDLHlCRFVELENDUEEsU0FDQyxvRkFBQSxDQU1BLDRGQUFBLENBTUEsYURBRCxDQ0dBLGdCQUNDLGFEQUQsQ0NHQSxXQUVDLGtDQUFBLENBQUEsMEJBQUEsQ0FEQSwwQkRDRCxD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 */
