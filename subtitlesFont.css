@@ -23,7 +23,7 @@ video::-webkit-media-text-track-container {
   text-shadow: 0em 0em 0.2em rgba(0, 0, 0, 1) !important;
 }
 
-.htmlvideoplayer:cue, video:cue {
+.htmlvideoplayer, .htmlvideoplayer:cue, video:cue {
   font-family: "Raleway" !important;
   font-weight: 700 !important;
   text-shadow: 0em 0em 0.2em rgba(0, 0, 0, 1) !important;
