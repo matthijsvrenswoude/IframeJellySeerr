@@ -1,3 +1,7 @@
+#loginPage::after{
+    background: url("https://cdn.jsdelivr.net/gh/matthijsvrenswoude/IframeJellySeerr/gradient.png") !important;
+}
+
 #requestMediaTab{
     position: absolute;
     top: 0;
